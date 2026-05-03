@@ -68,7 +68,9 @@ class ElectricityBill {
             cout << "Bill Generated Successfully\n";
             cout << "Total Amount: " << ratePerUnit*unitsConsumed << endl;
         }
-
+        ~ElectricityBill() {
+            cout << "Object Destroyed\n";
+        }
 };
 
 int main () {
